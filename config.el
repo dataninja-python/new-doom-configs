@@ -47,8 +47,7 @@
 ;;  :config
 ;;  (load-theme 'monokai-pro t))
 
-;; (setq doom-theme 'zenburn)
-(setq doom-theme 'doom-laserwave-padded-modeline)
+(setq doom-theme 'zenburn)
 ;;(load-theme 'zenburn t)
 ;; ((use-package! tron-legacy-theme
 ;; 		      :config
