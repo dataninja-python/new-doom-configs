@@ -48,6 +48,15 @@
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
 ;(unpin! t)
 
+;;eshell
+(package! eshell-did-you-mean)
+(package! eshell-up)
+(package! eshell-z)
+(package! esh-help)
+(package! shrink-path)
+(package! bash-completion)
+(package! fish-completion)
+
 ;;vertico
 ;;doom-package:all-the-icons-completion if doom-module:+icons
 ;;doom-package:consult
@@ -66,7 +75,7 @@
 (package! embark-consult)
 (package! marginalia)
 (package! orderless)
-(package! vertico-postframe)
+(package! vertico-posframe)
 (package! wgrep)
 
 ;;company

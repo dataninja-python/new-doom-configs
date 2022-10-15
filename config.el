@@ -83,7 +83,13 @@
 ;;
 ;; after company is loaded modify how it operates
 (after! company
-  (setq company-idle-delay 0.5
+  (setq
+        company-idle-delay 0.5
         company-minimum-prefix-length 2)
-  (setq company-show-numbers t)
-  (add-hook 'evil-normal-state-entry-hook #'company-abort)) ;; make aborting less annoying.
+  (setq
+        company-show-quick-access t)
+  (add-hook
+        'evil-normal-state-entry-hook #'company-abort)) ;; make aborting less annoying.
+
+(after! eterm
+  (use-package! bash-completion-enabled t))
