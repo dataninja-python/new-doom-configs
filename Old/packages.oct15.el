@@ -40,7 +40,6 @@
 ;; Use `:pin' to specify a particular commit to install.
 ;(package! builtin-package :pin "1a2b3c4d5e")
 
-
 ;; Doom's packages are pinned to a specific commit and updated from release to
 ;; release. The `unpin!' macro allows you to unpin single packages...
 ;(unpin! pinned-package)
@@ -48,3 +47,70 @@
 ;(unpin! pinned-package another-pinned-package)
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
 ;(unpin! t)
+
+;;https://ruivieira.dev/doom-emacs.html
+(package! virtualenvwrapper)
+(package! python-black)
+(package! pikchr-mode)
+(package! xonsh-mode)
+
+;;very large files: https://terrymunro.keybase.pub/
+(package! vlf :recipe (:host github :repo "m00natic/vlfi" :files ("*.el")))
+
+;;company language servers
+(package! company-lsp)
+
+;;eshell
+(package! eshell-did-you-mean)
+(package! eshell-up)
+(package! eshell-z)
+(package! esh-help)
+(package! shrink-path)
+(package! bash-completion)
+(package! fish-completion)
+
+;;vertico
+;;doom-package:all-the-icons-completion if doom-module:+icons
+;;doom-package:consult
+;;doom-package:consult-flycheck if doom-module::checkers syntax
+;;doom-package:embark
+;;doom-package:embark-consult
+;;doom-package:marginalia
+;;doom-package:orderless
+;;doom-package:vertico
+;;doom-package:vertico-posframe if doom-module:+childframe
+;;doom-package:wgrep
+(package! all-the-icons-completion)
+(package! consult)
+(package! consult-flycheck)
+(package! embark)
+(package! embark-consult)
+(package! marginalia)
+(package! orderless)
+(package! vertico-posframe)
+(package! wgrep)
+
+;;company
+;;doom-package:company-box if doom-module:+childframe
+;;doom-package:company-dict
+;;doom-package:company-mode
+(package! company-box)
+(package! company-dict)
+(package! company-mode)
+
+;; doom-package:spell-fu
+(package! spell-fu)
+
+;;doom-package:langtool
+;;doom-package:writegood-mode
+(package! langtool)
+(package! writegood-mode)
+
+;; emacs everywhere
+;;doom-package:emacs-everywhere
+(package! emacs-everywhere)
+
+;; calendar
+(package! calfw)
+(package! calfw-org)
+(package! org-gcal)
