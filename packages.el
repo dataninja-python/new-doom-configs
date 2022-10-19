@@ -48,3 +48,83 @@
 ;(unpin! pinned-package another-pinned-package)
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
 ;(unpin! t)
+;company
+(package! company-dict)
+(package! company-box)
+(package! company-mode)
+;; doom-package:all-the-icons-completion if doom-module:+icons
+;; doom-package:consult
+;; doom-package:consult-flycheck if doom-module::checkers syntax
+;; doom-package:embark
+;; doom-package:embark-consult
+;; doom-package:marginalia
+;; doom-package:orderless
+;; doom-package:vertico
+;; doom-package:vertico-posframe if doom-module:+childframe
+;; doom-package:wgrep
+(package! all-the-icons-completion)
+(package! consult)
+(package! consult-flycheck)
+(package! embark)
+(package! embark-consult)
+(package! marginalia)
+(package! orderless)
+(package! vertico)
+(package! wgrep)
+
+;; deft
+(package! deft)
+
+;; doom-package:avy
+;; doom-package:drag-stuff
+;;ackage:link-hint
+
+(package! avy)
+(package! drag-stuff)
+(package! link-hint)
+
+;; doom-package:evil
+;; doom-package:evil-args
+;; doom-package:evil-collection if doom-module:+everywhere
+;; doom-package:evil-easymotion
+;; doom-package:evil-embrace
+;; doom-package:evil-escape
+;; doom-package:evil-exchange
+;; doom-package:evil-indent-plus
+;; doom-package:evil-lion
+;; doom-package:evil-nerd-commentary
+;; doom-package:evil-numbers
+;; doom-package:evil-quick-diff
+;; doom-package:evil-snipe
+;; doom-package:evil-surround
+;; doom-package:evil-textobj-anyblock
+;; doom-package:evil-vimish-fold
+;; doom-package:evil-visualstar
+;; doom-package:exato
+
+(package! evil)
+(package! evil-args)
+(package! evil-collection)
+(package! evil-easymotion)
+(package! evil-escape)
+(package! evil-exchange)
+(package! evil-indent-plus)
+(package! evil-lion)
+;;(package! evil-nerd-commentary)
+(package! evil-numbers)
+(package! evil-quick-diff)
+(package! evil-snipe)
+(package! evil-surround)
+(package! evil-textobj-anyblock)
+(package! evil-vimish-fold)
+(package! evil-visualstar)
+(package! exato)
+
+(package! evil-vimish-fold)
+(package! vimish-fold)
+(package! tree-sitter)
+(package! ts-fold)
+
+;; org super agenda
+(package! brain)
+(package! org-super-agenda)
